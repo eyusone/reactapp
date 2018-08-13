@@ -23,7 +23,7 @@ import Mainpage from './Components/Containers/main/mainpage.jsx';
 const Routes = () => (
 
   <Switch location = {location}>
-  <Route exact path='/public' component={LoaderComponent}/>
+  <Route exact path='/' component={LoaderComponent}/>
   <Route path='/public/main' component={Mainpage(Main)}/>
   <Route path='/public/news/:id' component={NewsBlock} />
   <Route path='/public/news' component={Mainpage(News)}/>
