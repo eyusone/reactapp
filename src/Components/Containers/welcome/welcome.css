@@ -1,0 +1,15 @@
+.back {
+	display: block;
+	background: rgba(3,57,108, 0.8);
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: ease
+}
+
+.back:hover {
+	background: url('http://www.sdjgjx.com/up/pc/background%20hd.jpg');
+	background-size: cover;
+	/*background: red;*/
+
+}
+

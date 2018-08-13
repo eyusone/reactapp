@@ -1,0 +1,15 @@
+li a:hover {
+	color: #b6bdc6;
+	text-decoration: none
+}
+
+.active {
+	font-weight: bold
+}
+
+li a {
+	font-size: 14px;
+	color: white
+}
+
+
