@@ -23,8 +23,8 @@ class Val extends React.Component {
 Это решается путем создания функции, которую мы можем вызвать вместе с компонентом React. Функция будет возвращать новый компонент React, который выведет переданный компонент, добавив ему дополнительное свойство, предоставляющее доступ к информации пользователя.
 
 Это звучит несколько сложно, проще показать на примере кода</p>
-                        <Link to = '/public/ex' className = "btn btn-secondary btn-primary">Back</Link>
-                        <Link to = '/public/news' className = "btn btn-secondary btn-primary ml-2" style = {{float:'right'}}>Go to news</Link>
+                        <Link to = '/ex' className = "btn btn-secondary btn-primary">Back</Link>
+                        <Link to = '/news' className = "btn btn-secondary btn-primary ml-2" style = {{float:'right'}}>Go to news</Link>
                 </div>
             </div>
         </div>
