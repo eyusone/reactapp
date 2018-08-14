@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+var history = require('connect-history-api-fallback');
 //import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import './App.css';
@@ -23,8 +24,8 @@ import Mainpage from './Components/Containers/main/mainpage.jsx';
 const Routes = () => (
 
   <Switch location = {location}>
-  <Route exact path='/' component={LoaderComponent}/>
-  <Route path='/public/main' component={Mainpage(Main)}/>
+  <Route exact path='/' component={LoaderComponent} history = {history}/>
+  <Route path='/main' component={Mainpage(Main)} history = {history}/>
   <Route path='/public/news/:id' component={NewsBlock} />
   <Route path='/public/news' component={Mainpage(News)}/>
   <Route path='/public/ex' component={LoaderComponent}/>

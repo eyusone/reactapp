@@ -1,17 +1,19 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.jsx", // входная точка - исходный файл
     output:{
-        path: path.resolve(__dirname, './public'),     // путь к каталогу выходных файлов - папка public
-        publicPath: 'public/',
+        path: path.resolve(__dirname, 'public'),     // путь к каталогу выходных файлов - папка public
+        publicPath: '/public/',
         filename: "bundle.js"       // название создаваемого файла
     },
 
     devServer: {
-     historyApiFallback: true,
+        historyApiFallback: true,
+        index: 'public/index.html'
     },
     
     module:{
@@ -39,5 +41,9 @@ module.exports = {
                 jQuery: "jquery/dist/jquery.min.js",
                 "window.jQuery": "jquery/dist/jquery.min.js"
             })
+            //new HtmlWebpackPlugin({
+               // template: './public/index.html',
+                //inject: "body"
+            //})
         ]
 }
