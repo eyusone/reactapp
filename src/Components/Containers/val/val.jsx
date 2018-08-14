@@ -7,10 +7,10 @@ class Val extends React.Component {
     return (
     <div className = "container">
         <div className = "row align-items-start">
-            <div className = "col-6">
-                <img src = "img/cr7.jpg" style = {{borderRadius: '50%', width: '150px', height: '125px'}}/>
+            <div className = "col-3">
+                <img src = "img/cr7.jpg" style = {{borderRadius: '70%', width: '150px', height: '125px'}}/>
             </div>
-            <div className = "col-6">
+            <div className = "col-9 col-9-md col-12-sm col-9-xl">
                 <div style = {{fontFamily: '"Prata", serif',
                         textAlign: 'left'}}>
             
