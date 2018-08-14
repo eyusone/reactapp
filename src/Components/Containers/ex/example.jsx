@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 import Main from '../main/main.jsx';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
- 
-
 export default class LoaderComponent extends Component {
    constructor(props) {
       super(props);
@@ -15,10 +13,6 @@ export default class LoaderComponent extends Component {
       }
       }
 
-      componentWillMount() {
-
-      }
-
        componentDidMount() 
        {  
          setTimeout(
@@ -26,7 +20,6 @@ export default class LoaderComponent extends Component {
                 this.setState({loading: false})
             }, 1000
             )
-         this.state.load = true;
        }
 
    render()
@@ -49,7 +42,7 @@ export default class LoaderComponent extends Component {
                     </button>                    
                     </div>;
 
-    let data = this.state.loading ? <img src = '/src/Components/Containers/ex/91.gif' style = {style}/> : 
+    let data = this.state.loading ? <img src = '../../../../public/img/91.gif' style = {style}/> : 
         HTMLCode
 
     return(
