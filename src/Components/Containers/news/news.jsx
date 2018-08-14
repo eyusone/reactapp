@@ -30,7 +30,7 @@ class News extends React.Component {
                     <div className = "col-12 col-md-12 col-xl-12 col-sm-12 bg-light" style = {{padding: '3%', boxShadow: '10px 8px 20px -3px'}}>
                     kek <br/>
                     {text.map(function(item){ 
-                            return <NavLink key={item.id} to={`/public/news/${item.id}`}>{item.property}</NavLink>
+                            return <NavLink key={item.id} to={`/news/${item.id}`}>{item.property}</NavLink>
                             })
                     }
                     <br/>

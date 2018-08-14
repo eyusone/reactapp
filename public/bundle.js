@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "public/";
+/******/ 	__webpack_require__.p = "/public";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 57);
@@ -2861,8 +2861,8 @@ var history = __webpack_require__(141);
 
 var Routes = function Routes() {
   return _react2.default.createElement(
-    _reactRouterDom.Switch,
-    { location: location, history: history },
+    'div',
+    null,
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _example2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { path: '/main', component: (0, _mainpage2.default)(_main2.default) }),
     _react2.default.createElement(_reactRouterDom.Route, { path: '/public/news/:id', component: _newsblock2.default }),
@@ -4960,6 +4960,9 @@ var _registerServiceWorker2 = _interopRequireDefault(_registerServiceWorker);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//import createBrowserHistory from 'history/lib/createBrowserHistory'
+
+//import {History} from 'react-router';
 _reactDom2.default.render(_react2.default.createElement(
 	_reactRouterDom.BrowserRouter,
 	null,

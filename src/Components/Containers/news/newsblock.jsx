@@ -37,7 +37,7 @@ class NewsBlock extends React.Component {
             <div className = "col-12 col-md-12 col-xl-12 col-sm-12" >
             {texting.info}
             <br/>
-            <Link className = 'btn btn-primary' to='/public/news' style = {{color: 'white', textDecoration: 'none'}}>
+            <Link className = 'btn btn-primary' to='/news' style = {{color: 'white', textDecoration: 'none'}}>
             Back
             </Link>
             </div>

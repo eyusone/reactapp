@@ -38,7 +38,7 @@ export default class LoaderComponent extends Component {
                     <button type="button" 
                     className="btn btn-secondary btn-primary"
                     style = {{fontSize: '15px'}}>
-                    <Link to='/main' className = "text-white">More <img src = 'img/next.png'/></Link>
+                    <Link to='/main' className = "text-white">More <img src = '../../../../public/img/next.png'/></Link>
                     </button>                    
                     </div>;
 

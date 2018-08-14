@@ -31,7 +31,7 @@ class Navbarapp extends React.Component {
                             <Collapse isOpen={!this.state.collapsed} navbar>
                                 <Nav navbar>
                                     <NavItem>
-                                        <Link to="/public/ex" style = {{color: 'white', fontSize: '14px'}}
+                                        <Link to="/ex" style = {{color: 'white', fontSize: '14px'}}
                                         className = "pl-4"><b>EX</b></Link>
                                     </NavItem>
                                 </Nav>
