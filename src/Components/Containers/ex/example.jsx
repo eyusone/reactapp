@@ -38,11 +38,11 @@ export default class LoaderComponent extends Component {
                     <button type="button" 
                     className="btn btn-secondary btn-primary"
                     style = {{fontSize: '15px'}}>
-                    <Link to='/main' className = "text-white">More <img src = '../../../../public/img/next.png'/></Link>
+                    <Link to='/main' className = "text-white">More <img src = '../../../../img/next.png'/></Link>
                     </button>                    
                     </div>;
 
-    let data = this.state.loading ? <img src = '../../../../public/img/91.gif' style = {style}/> : 
+    let data = this.state.loading ? <img src = '../../../../img/91.gif' style = {style}/> : 
         HTMLCode
 
     return(
