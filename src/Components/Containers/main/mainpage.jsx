@@ -1,4 +1,3 @@
-// ./src/components/PageShell.js
 import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './main.css';
