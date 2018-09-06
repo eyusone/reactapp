@@ -26,7 +26,7 @@ const Routes = () => (
   <Switch>
   <Route exact path='/' component={LoaderComponent}/>
   <Route path='/main' component={Mainpage(Main)} />
-  <Route path='/news' component={Mainpage(News)}/>
+  <Route path='/news/:id' component={Mainpage(News)}/>
   <Route path='/ex' component={LoaderComponent}/>
 
   </Switch>

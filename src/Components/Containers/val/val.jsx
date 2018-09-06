@@ -13,7 +13,7 @@ class Val extends React.Component {
                         <h1>{this.props.namepaper}</h1>
                         <p>{this.props.text}</p>
 
-                        <Link to = '/news' className = "btn btn-secondary btn-primary ml-2" style = {{float:'right'}}>Подробнее</Link>
+                        <Link to = {`/news/${this.props.id}`} className = "btn btn-secondary btn-primary ml-2" style = {{float:'right'}}>Подробнее</Link>
                 </div>
             </div>
         </div>
