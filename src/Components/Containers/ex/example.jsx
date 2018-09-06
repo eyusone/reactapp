@@ -13,8 +13,8 @@ export default class LoaderComponent extends Component {
       }
       }
 
-       componentDidMount() 
-       {  
+       componentDidMount()
+       {
          setTimeout(
             () => {
                 this.setState({loading: false})
@@ -23,7 +23,7 @@ export default class LoaderComponent extends Component {
        }
 
    render()
-   {        
+   {
     const style = {
         display: 'block',
         marginLeft: 'auto',
@@ -32,17 +32,17 @@ export default class LoaderComponent extends Component {
 
     let page = this.props.location.pathname.substr(1);
 
-    let HTMLCode = 
+    let HTMLCode =
                     <div>
-                    <h1>My name is Vasya! I want to work an big company!</h1>
-                    <button type="button" 
+                    <h1>Hello! My name is 'username', and welcome to my page!</h1>
+                    <button type="button"
                     className="btn btn-secondary btn-primary"
                     style = {{fontSize: '15px'}}>
                     <Link to='/main' className = "text-white">More <img src = '../../../../img/next.png'/></Link>
-                    </button>                    
+                    </button>
                     </div>;
 
-    let data = this.state.loading ? <img src = '../../../../img/91.gif' style = {style}/> : 
+    let data = this.state.loading ? <img src = '../../../../img/91.gif' style = {style}/> :
         HTMLCode
 
     return(
@@ -60,7 +60,7 @@ export default class LoaderComponent extends Component {
                 </div>
 
         </section>
-        
+
       )
    }
 }
