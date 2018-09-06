@@ -3,18 +3,9 @@ import {Link} from 'react-router-dom';
 
 class Val extends React.Component {
     render() {
-    const text = {
-      name: 'Name of the paper'
-    };
-
     return (
     <div className = "container">
         <div className = "row align-items-start">
-          {/*<div className = "col-3">
-                <img src = "/public/img/cr7.jpg" style = {{borderRadius: '70%', width: '150px', height: '125px'}}
-                className='col-sm-12'/>
-            </div>*/}
-
             <div className = "col-12 col-md-12 col-xl-12">
                 <div style = {{fontFamily: '"Prata", serif',
                         textAlign: 'left'}}>
@@ -30,5 +21,4 @@ class Val extends React.Component {
 );
 }
 }
-
 export default Val;

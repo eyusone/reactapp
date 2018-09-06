@@ -16,7 +16,7 @@ import Welcome from './Components/Containers/welcome/welcome.jsx';
 import Main from './Components/Containers/main/main.jsx';
 import Bottom from './Components/Containers/footer/footer.jsx';
 import News from './Components/Containers/news/news.jsx';
-import NewsBlock from './Components/Containers/news/newsblock.jsx';
+//import NewsBlock from './Components/Containers/news/newsblock.jsx';
 import LoaderComponent from './Components/Containers/ex/example.jsx';
 import Mainpage from './Components/Containers/main/mainpage.jsx';
 
@@ -26,10 +26,9 @@ const Routes = () => (
   <Switch>
   <Route exact path='/' component={LoaderComponent}/>
   <Route path='/main' component={Mainpage(Main)} />
-  <Route path='/news/:id' component={NewsBlock} />
   <Route path='/news' component={Mainpage(News)}/>
   <Route path='/ex' component={LoaderComponent}/>
-  
+
   </Switch>
   )
 
