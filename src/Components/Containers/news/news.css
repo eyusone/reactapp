@@ -1,3 +1,14 @@
 #news {
     font-family: "Prata", serif
 }
+
+.img-adaptive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #3E3F3A;
+}
+
+.img-adaptive:hover {
+    background-color: #4a4945;
+}
