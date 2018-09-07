@@ -1,30 +1,26 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./src/index.jsx", // входная точка - исходный файл
+    entry: "./src/index.jsx",
     output:{
-        path: path.resolve(__dirname, 'public'),     // путь к каталогу выходных файлов - папка public
-        publicPath: '/public',
-        filename: "bundle.js"       // название создаваемого файла
+        path: path.resolve(__dirname, 'public'),
+        publicPath: '/public/',
+        filename: "bundle.js"
     },
 
-    
-    
+
+
     module:{
-        rules:[   //загрузчик для jsx
+        rules:[
             {
-                test: /\.jsx?$/, // определяем тип файлов
-                exclude: /(node_modules)/,  // исключаем из обработки папку node_modules
-                loader: "babel-loader",   // определяем загрузчик
+                test: /\.jsx?$/,
+                exclude: /(node_modules)/,
+                loader: "babel-loader",
                 options:{
-                    presets:["env", "react"]    // используемые плагины
+                    presets:["env", "react"]
                 }
-                /*include: [
-                path.resolve(__dirname, 'node_modules/react-scroll/lib')
-                ]*/
             },
             {
                 test: /\.css$/,
@@ -41,16 +37,12 @@ module.exports = {
     devServer: {
     historyApiFallback: true
     },
-    
+
     plugins: [
             new webpack.ProvidePlugin({
                 $: "jquery/dist/jquery.min.js",
                 jQuery: "jquery/dist/jquery.min.js",
                 "window.jQuery": "jquery/dist/jquery.min.js"
             })
-            //new HtmlWebpackPlugin({
-                //template: 'public/index.html'
-                //inject: "body"
-            //})
         ]
 };

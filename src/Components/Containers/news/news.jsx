@@ -10,9 +10,9 @@ class News extends React.Component {
     render() {
         const id = this.props.match.params.id;
         const names = ['Данное приложение','APP.COM','Обо мне'];
-        const imgs = ['/public/img/screen.png', '/public/img/screen2.png'];
+        const imgs = ['/img/screen.png', '/img/screen2.png'];
 
-        const describe = [
+        const describeone = [
           'Node.js (менеджер пакетов npm)',
           'ReactJS',
           'React Router', 'react-scroll', 'Верстка с помощью bootstrap',
@@ -20,8 +20,23 @@ class News extends React.Component {
           'Сборка приложения проводилась с помощью webpack4'
         ];
 
+        const describetwo = [
+          'Node.js (менеджер пакетов npm)', 'ReactJS',
+          'React Router', 'Redux',
+          'Верстка с помощью bootstrap',
+          'Graphics - react-recharts', 'Данные брались со API: https://www.football-data.org/ (для таблицы)',
+          'Сборка приложения проводилась с помощью webpack4'
+        ];
+
+        const describethree = [
+          'Закончил университет КФУ в 2017г.', 'Специальность: Прикладная математика',
+          'Вследствие пункта выше, параллельно учёбе велась работа над собой в качестве Frontend\a'
+        ]
+
         const wrdesc = [
-          'Это приложение своего рода визитка.'
+          'Это приложение своего рода визитка.',
+          'Это приложение создано для отображения различных данных (в частности футбольные таблички, или графики)',
+          'Более подробно всё описано в ссылке на hh.ru'
         ];
 
         const urls = ['http://dxxx.netlify.com', 'http://dyyy.netlify.com',
@@ -47,10 +62,24 @@ class News extends React.Component {
                       <ul style = {{padding: '0'}}>
                         <h2>App stack:</h2>
                           {
-                              describe.map((item, index)=>{
-                                return (<li style = {{padding: '3px', marginLeft: '20px'}}>{item}</li>)
-                              })
+                              describeone.map((item, index)=>{
+                                  switch (id) {
+                                    case '1':
+                                        return (<li style = {{padding: '3px', marginLeft: '20px'}}>{item}</li>)
+                                  }
+                          })}
+                        {describetwo.map((item, index)=>{
+                          switch (id) {
+                            case '2':
+                              return (<li style = {{padding: '3px', marginLeft: '20px'}}>{item}</li>)
                           }
+                        })}
+                        {describethree.map((item, index)=>{
+                          switch (id) {
+                            case '3':
+                              return (<li style = {{padding: '3px', marginLeft: '20px'}}>{item}</li>)
+                          }
+                        })}
                       </ul>
 
                   </div>
@@ -72,9 +101,9 @@ class News extends React.Component {
 
                 <div className='row justify-content-start pb-3'>
                   <div className='col-9'>
-                {urls.map ((item,index)=> {if (id == index+1) {
-                  return (<p>Ссылка: <a href = {item}> {item}</a></p>)
-                }})}
+                    {urls.map ((item,index)=> {if (id == index+1) {
+                      return (<p>Ссылка: <a href = {item}> {item}</a></p>)
+                    }})}
                   </div>
                 </div>
 

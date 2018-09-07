@@ -25,7 +25,7 @@ class Main extends React.Component {
                 <div className = "row align-items-start justify-content-start"  >
                   <div className = "col-7 col-md-7 col-xl-7 col-sm-7 bg-light mt-3"
                        style = {{padding: '3%', textAlign: 'center', boxShadow: '10px 8px 20px -3px'}} >
-                    <Val id = '1' img = '/public/img/screen.png' namepaper = {namepaper[2]} text = {'Это простое React-приложение, базированное на React, создано для отображения данных обо мне и о моих проектах. Весь стек проектов можно узнать, кликнув по кнопке подробнее (в частности, например для скроллинга использовалась библиотека react-scroll).'}/>
+                    <Val id = '1' namepaper = {namepaper[2]} text = {'Это простое React-приложение, базированное на React, создано для отображения данных обо мне и о моих проектах. Весь стек проектов можно узнать, кликнув по кнопке подробнее (в частности, например для скроллинга использовалась библиотека react-scroll).'}/>
                   </div>
                 </div>
 
