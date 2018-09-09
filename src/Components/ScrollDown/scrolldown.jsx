@@ -1,29 +1,27 @@
 // ES6 Imports
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import 'bootswatch/dist/sandstone/bootstrap.css';
-import { Link, Element , Events, Button, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
- 
- 
+import { Link, Element, Events, Button, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+
+
 // Or Access Link,Element,etc as follows
-/*let Link       = Scroll.Link;
+/* let Link       = Scroll.Link;
 let Element    = Scroll.Element;
 let Events     = Scroll.Events;
 let scroll     = Scroll.animateScroll;
 let scrollSpy  = Scroll.scrollSpy;*/
- 
-class ScrollDown extends React.Component{
+
+class ScrollDown extends React.Component {
   componentDidMount() {
- 
-    Events.scrollEvent.register('begin', function(to, element) {
-      console.log("begin", arguments);
+    Events.scrollEvent.register('begin', function (to, element) {
+      console.log('begin', arguments);
     });
- 
-    Events.scrollEvent.register('end', function(to, element) {
-      console.log("end", arguments);
+
+    Events.scrollEvent.register('end', function (to, element) {
+      console.log('end', arguments);
     });
- 
+
     scrollSpy.update();
- 
   }
   componentWillUnmount() {
     Events.scrollEvent.remove('begin');
@@ -40,28 +38,30 @@ class ScrollDown extends React.Component{
     scroller.scrollTo('main', {
       duration: 800,
       delay: 0,
-      smooth: 'easeInOutQuart',
-     // ContainerId: 
-    })
+      smooth: 'easeInOutQuart'
+      // ContainerId:
+    });
   }
 
   scrollMore() {
     scroll.scrollMore(100);
   }
-  handleSetActive (to) {
+  handleSetActive(to) {
     console.log(to);
   }
   render() {
-  	return (
+  	  return (
       <div>
 
-        <Link activeClass="active"  className="scroll btn btn-primary btn-lg text-white" to="navbar" 
-        spy={true} smooth={true} duration={500} style = {{fontSize: '14px'}}>
+      <Link activeClass='active'  className='scroll btn btn-primary btn-lg text-white' to='navbar'
+          spy smooth duration={500}
+          style = {{ fontSize: '14px' }}
+        >
         Open the app!</Link>
 
-      </div>
-    )
+    </div>
+    );
   }
 }
- 
+
 export default ScrollDown;
