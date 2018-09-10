@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import './welcome.css';
-import ScrollDown from '../../ScrollDown/scrolldown.jsx';
+import ScrollDown from '../../ScrollDown/scrolldown.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Welcome extends React.Component {

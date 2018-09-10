@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, Switch, Route, Redirect, Link } from 'react-router-dom';
 import 'bootswatch/dist/sandstone/bootstrap.css';
-import Routes from '../../../routes.jsx';
+import Routes from '../../../routes.js';
 
 const text = [
   { id: 1, property: 'First', info: 'New' },

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './example.css';
 import { Link } from 'react-router-dom';
-import Main from '../main/main.jsx';
+import Main from '../main/main.js';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class LoaderComponent extends Component {

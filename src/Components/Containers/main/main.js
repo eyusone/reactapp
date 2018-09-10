@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootswatch/dist/sandstone/bootstrap.css';
 
 import { Link } from 'react-router-dom';
-import Val from '../val/val.jsx';
+import Val from '../val/val.js';
 
 class Main extends React.Component {
   constructor(props) {
